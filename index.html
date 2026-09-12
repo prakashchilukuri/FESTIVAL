@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#5A0016">
+    <title>Vinayaka Chaturthi Celebrations 2025 - Campus Competitions</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-cream: #FAF6EE;
+            --maroon-primary: #800020;
+            --maroon-deep: #5A0016;
+            --gold-accent: #D4AF37;
+            --gold-light: #F9E79F;
+            --green-traditional: #1E4D2B;
+            --orange-festive: #E65100;
+            --text-dark: #2C1810;
+            --text-muted: #66554E;
+            --white: #FFFFFF;
+            --card-shadow: 0 10px 25px rgba(90, 0, 22, 0.08);
+            --card-shadow-hover: 0 16px 35px rgba(90, 0, 22, 0.16);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-cream);
+            color: var(--text-dark);
+            line-height: 1.5;
+            background-image: 
+                radial-gradient(circle at 10% 10%, rgba(212, 175, 55, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 90% 90%, rgba(128, 0, 32, 0.06) 0%, transparent 40%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        /* Top Decorative Border */
+        .header-top-border {
+            height: 6px;
+            width: 100%;
+            background: linear-gradient(90deg, var(--maroon-primary), var(--gold-accent), var(--green-traditional), var(--orange-festive), var(--maroon-primary));
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 2.5rem 1rem 1.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .header-subtitle {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(0.75rem, 2.5vw, 1.05rem);
+            letter-spacing: clamp(2px, 1vw, 4px);
+            color: var(--maroon-primary);
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .header-subtitle::before, .header-subtitle::after {
+            content: '❖';
+            color: var(--gold-accent);
+            font-size: 0.8em;
+        }
+
+        h1.main-title {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(1.65rem, 6vw, 2.75rem);
+            color: var(--maroon-deep);
+            font-weight: 800;
+            margin-bottom: 0.4rem;
+            line-height: 1.2;
+            word-wrap: break-word;
+        }
+
+        .tagline {
+            font-family: 'Great Vibes', cursive;
+            font-size: clamp(1.6rem, 5vw, 2.4rem);
+            color: var(--orange-festive);
+            margin-bottom: 0.8rem;
+        }
+
+        .description {
+            font-size: clamp(0.9rem, 2.5vw, 1.05rem);
+            color: var(--text-muted);
+            max-width: 620px;
+            margin: 0 auto;
+            padding: 0 0.5rem;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 1rem 1.25rem 3rem;
+            flex-grow: 1;
+        }
+
+        /* Responsive Grid: Seamless 1 to 3 column adaptation */
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        /* Event Card */
+        .event-card {
+            background: var(--white);
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            border: 1px solid rgba(212, 175, 55, 0.25);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .event-card:hover, .event-card:active {
+            transform: translateY(-5px);
+            box-shadow: var(--card-shadow-hover);
+            border-color: var(--gold-accent);
+        }
+
+        /* Banner Container maintaining image ratio across screens */
+        .banner-container {
+            width: 100%;
+            aspect-ratio: 16 / 7;
+            overflow: hidden;
+            position: relative;
+            background-color: #FAF2E6;
+        }
+
+        .banner-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: transform 0.5s ease;
+        }
+
+        .event-card:hover .banner-container img {
+            transform: scale(1.04);
+        }
+
+        /* Card Content Body */
+        .card-body {
+            padding: 1.4rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .event-badge {
+            align-self: flex-start;
+            padding: 3px 12px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 0.6rem;
+        }
+
+        .badge-rangoli {
+            background-color: #FFF3E0;
+            color: #E65100;
+            border: 1px solid #FFE0B2;
+        }
+
+        .badge-idol {
+            background-color: #E8F5E9;
+            color: #2E7D32;
+            border: 1px solid #C8E6C9;
+        }
+
+        .badge-reel {
+            background-color: #FCE4EC;
+            color: #C2185B;
+            border: 1px solid #F8BBD0;
+        }
+
+        .card-title {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(1.25rem, 3vw, 1.45rem);
+            color: var(--maroon-deep);
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+        }
+
+        .card-desc {
+            color: var(--text-muted);
+            font-size: 0.92rem;
+            margin-bottom: 1.4rem;
+            flex-grow: 1;
+            line-height: 1.5;
+        }
+
+        /* Registration Button - Touch Friendly */
+        .btn-register {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+            min-height: 48px; /* Accessible Touch Target */
+            padding: 0.75rem 1.25rem;
+            background: linear-gradient(135deg, var(--maroon-primary), var(--maroon-deep));
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.98rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(128, 0, 32, 0.2);
+            transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-register:hover, .btn-register:active {
+            background: linear-gradient(135deg, #990026, var(--maroon-primary));
+            box-shadow: 0 6px 16px rgba(128, 0, 32, 0.35);
+        }
+
+        .btn-register i {
+            font-size: 0.85rem;
+            transition: transform 0.3s ease;
+        }
+
+        .btn-register:hover i {
+            transform: translateX(4px);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            background-color: var(--maroon-deep);
+            color: rgba(255,255,255,0.85);
+            font-size: 0.85rem;
+            margin-top: auto;
+            width: 100%;
+        }
+
+        footer p span {
+            color: var(--gold-accent);
+            font-weight: 600;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 480px) {
+            header {
+                padding: 1.8rem 0.8rem 1rem;
+            }
+            .container {
+                padding: 0.8rem 1rem 2rem;
+            }
+            .events-grid {
+                gap: 1.4rem;
+            }
+            .card-body {
+                padding: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-top-border"></div>
+
+    <header>
+        <div class="header-subtitle">Campus Celebrations 2025</div>
+        <h1 class="main-title">VINAYAKA CHATURTHI</h1>
+        <div class="tagline">Express Your Creativity & Devotion</div>
+        <p class="description">
+            Participate in our campus competitions and celebrate Vinayaka Chaturthi! Click your event below to register.
+        </p>
+    </header>
+
+    <main class="container">
+        <div class="events-grid">
+
+            <!-- Rangoli Event Card -->
+            <article class="event-card">
+                <div class="banner-container">
+                    <img src="rangoli_banner.png" alt="Rangoli Event Banner" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="event-badge badge-rangoli">Colors & Art</span>
+                    <h2 class="card-title">Rangoli Event</h2>
+                    <p class="card-desc">
+                        Let's fill the campus with vibrant colors! Showcase your artistic traditional patterns and Rangoli skills.
+                    </p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScqL8k_oUyrU4KfCbI957kpfOwQlkjayC6srU0XAG8eeClsPA/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn-register">
+                        <span>Register Now</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Idol Making Competition Card -->
+            <article class="event-card">
+                <div class="banner-container">
+                    <img src="idol_making_banner.png" alt="Idol Making Competition Banner" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="event-badge badge-idol">Craft & Devotion</span>
+                    <h2 class="card-title">Idol Making</h2>
+                    <p class="card-desc">
+                        Let's create with devotion! Sculpt eco-friendly clay Vinayaka idols with your hands and creativity.
+                    </p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSefqwFyl34JGAAqGWo3MXVAyqDmuU_YAf0R_TxziUkAssw6TA/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn-register">
+                        <span>Register Now</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Reel Making Competition Card -->
+            <article class="event-card">
+                <div class="banner-container">
+                    <img src="reel_making_banner.png" alt="Reel Making Competition Banner" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <span class="event-badge badge-reel">Media & Digital</span>
+                    <h2 class="card-title">Reel Making</h2>
+                    <p class="card-desc">
+                        Your Story. Your Style. Your Reel. Capture the essence, festive vibe, and celebration moments on campus.
+                    </p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3Qhfc5I33f-o4n1GO3wzh4IjpaaN5Lj1SLuDc8OHzFWDGOQ/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn-register">
+                        <span>Register Now</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Campus Vinayaka Chaturthi Celebrations 2025 &bull; Organized by <span>Student Cultural Committee</span></p>
+    </footer>
+
+</body>
+</html>
